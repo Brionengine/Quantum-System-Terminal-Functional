@@ -12,6 +12,11 @@ An advanced terminal that understands and executes natural language commands in 
 ### Auto-Training Feature
 This module detects high-quality server-based data when available and automatically initiates model fine-tuning using advanced infrastructure. By integrating this open-source code, companies and large infrastructure providers benefit from energy-optimized algorithms while allowing model training on their high-capacity servers.
 
+Key Features added:
+CPU and GPU Quantization: Commands are optimized based on system metrics such as CPU usage and response time.
+Performance-based Decision Making: If the CPU usage is high (above 80%), CPU quantization is applied. If the system load is moderate, GPU offloading is considered. For lower loads, parallelization is applied.
+Terminal-specific Optimization: Designed to handle and optimize commands running within an advanced terminal environment.
+
 ## Installation
 
 ```bash
