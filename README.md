@@ -1,6 +1,6 @@
 # Advanced Terminal
 
-An advanced terminal that understands and executes natural language commands in English, with quantum algorithm integration. A new system that works in classical and quantum systems, functional but should be given a little time to configure before executing run command.
+An advanced, new computer system that understands and executes natural language commands in English, with quantum algorithm integration. A new system that works in classical and quantum systems, functional but should be given a little time to configure before executing run command. An advanced computer system that can understand language so the input and output given can be in the user's native language.
 
 ## Features
 
