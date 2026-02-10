@@ -23,7 +23,7 @@ class QuantumModule:
     - Grover-inspired search through command history
     """
 
-    VERSION = "2.0.0"
+    VERSION = "2.0.8"
 
     def __init__(self):
         """Initialize the quantum-enhanced module."""
