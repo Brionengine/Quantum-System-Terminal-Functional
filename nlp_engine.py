@@ -1,4 +1,10 @@
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from __future__ import annotations
+
+try:
+    from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+except ImportError:  # optional dependency: pip install transformers
+    AutoModelForSeq2SeqLM = None
+    AutoTokenizer = None
 
 class NLPEngine:
     def __init__(self, model_name='t5-base'):

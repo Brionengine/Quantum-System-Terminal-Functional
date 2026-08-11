@@ -1,5 +1,16 @@
-from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, TrainingArguments
-import pandas as pd
+from __future__ import annotations
+
+try:
+    from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, TrainingArguments
+except ImportError:  # optional dependency: pip install transformers
+    T5Tokenizer = None
+    T5ForConditionalGeneration = None
+    Trainer = None
+    TrainingArguments = None
+try:
+    import pandas as pd
+except ImportError:  # optional dependency: pip install pandas
+    pd = None
 from datasets import Dataset
 
 # Load and prepare data

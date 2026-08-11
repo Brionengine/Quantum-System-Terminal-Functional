@@ -23,3 +23,9 @@ Terminal-specific Optimization: Designed to handle and optimize commands running
 git clone https://github.com/yourusername/advanced-terminal.git
 cd advanced-terminal
 pip install -r requirements.txt
+
+## Optional dependencies
+
+This repository imports without the heavy scientific stack (numpy, torch,
+tensorflow, qiskit, cirq, ...). Clone it and run it; install only the packages
+the parts you actually use need. See [OPTIONAL_DEPENDENCIES.md](OPTIONAL_DEPENDENCIES.md).

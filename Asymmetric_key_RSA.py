@@ -1,6 +1,17 @@
-from Crypto.PublicKey import RSA
-from Crypto.Cipher import PKCS1_OAEP
-from Crypto.Random import get_random_bytes
+from __future__ import annotations
+
+try:
+    from Crypto.PublicKey import RSA
+except ImportError:  # optional dependency: pip install pycryptodome
+    RSA = None
+try:
+    from Crypto.Cipher import PKCS1_OAEP
+except ImportError:  # optional dependency: pip install pycryptodome
+    PKCS1_OAEP = None
+try:
+    from Crypto.Random import get_random_bytes
+except ImportError:  # optional dependency: pip install pycryptodome
+    get_random_bytes = None
 
 # Generate RSA keys
 def generate_rsa_keys():

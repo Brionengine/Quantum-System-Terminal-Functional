@@ -1,6 +1,15 @@
+from __future__ import annotations
+
 import os
-from transformers import T5Tokenizer, T5ForConditionalGeneration
-from Crypto.Cipher import AES
+try:
+    from transformers import T5Tokenizer, T5ForConditionalGeneration
+except ImportError:  # optional dependency: pip install transformers
+    T5Tokenizer = None
+    T5ForConditionalGeneration = None
+try:
+    from Crypto.Cipher import AES
+except ImportError:  # optional dependency: pip install pycryptodome
+    AES = None
 import base64
 import time
 
